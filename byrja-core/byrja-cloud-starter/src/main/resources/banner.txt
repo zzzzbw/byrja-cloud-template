@@ -1,0 +1,11 @@
+ ________      ___    ___ ________       ___  ________
+|\   __  \    |\  \  /  /|\   __  \     |\  \|\   __  \
+\ \  \|\ /_   \ \  \/  / | \  \|\  \    \ \  \ \  \|\  \
+ \ \   __  \   \ \    / / \ \   _  _\ __ \ \  \ \   __  \
+  \ \  \|\  \   \/  /  /   \ \  \\  \|\  \\_\  \ \  \ \  \
+   \ \_______\__/  / /      \ \__\\ _\ \________\ \__\ \__\
+    \|_______|\___/ /        \|__|\|__\|________|\|__|\|__|
+             \|___|/
+
+Spring Boot Version: [${spring-boot.version}]
+Application Name: [${spring.application.name}]  profile: [${spring.profiles.active}] version: [${project.version}] port: [${server.port}]
