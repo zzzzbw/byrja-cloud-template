@@ -19,7 +19,7 @@
         <byrja.core.version>0.0.1-SNAPSHOT</byrja.core.version>
         <spring.boot.version>2.5.3</spring.boot.version>
         <spring.cloud.version>2020.0.3</spring.cloud.version>
-        <alibaba.cloud.version>2.2.1.RELEASE</alibaba.cloud.version>
+        <alibaba.cloud.version>2.2.6.RELEASE</alibaba.cloud.version>
 
         <hutool.version>5.6.3</hutool.version>
         <lombok.version>1.18.20</lombok.version>

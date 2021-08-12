@@ -10,8 +10,17 @@ spring:
         server-addr: @config.server-addr@
         group: @config.group@
         file-extension: yaml
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
       discovery:
         namespace: @config.namespace@
         server-addr: @config.server-addr@
         watch:
           enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    show-details: always
