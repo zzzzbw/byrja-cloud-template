@@ -17,11 +17,15 @@
 
 spring-cloud相关组件的依赖
 
-spring-cloud-starter-alibaba-nacos-discovery
+1. spring-cloud-starter-alibaba-nacos-discovery
 
-spring-cloud-starter-alibaba-nacos-config
+2. spring-cloud-starter-alibaba-nacos-config
 
-spring-cloud-starter-bootstrap: 读取bootstrap.yml配置
+3. spring-cloud-starter-bootstrap: 读取bootstrap.yml配置
+
+4. spring-cloud-starter-openfeign feign调用。 关于feign`@FeignClient`应该写在哪里:
+   > https://blog.csdn.net/kingwinstar/article/details/110280781
+   > https://github.com/lexburner/feign-demo
 
 ### byrja-services
 

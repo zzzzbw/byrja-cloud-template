@@ -3,7 +3,7 @@ package cn.zzzzbw.byrja.order.service.impl;
 import cn.hutool.core.bean.BeanUtil;
 import cn.zzzzbw.byrja.order.entity.Order;
 import cn.zzzzbw.byrja.order.service.OrderService;
-import cn.zzzzbw.model.dto.OrderDto;
+import cn.zzzzbw.byrja.order.model.dto.OrderDto;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;

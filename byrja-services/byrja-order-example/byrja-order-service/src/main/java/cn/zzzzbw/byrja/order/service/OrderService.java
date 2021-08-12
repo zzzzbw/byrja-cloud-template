@@ -1,7 +1,7 @@
 package cn.zzzzbw.byrja.order.service;
 
 import cn.zzzzbw.byrja.order.entity.Order;
-import cn.zzzzbw.model.dto.OrderDto;
+import cn.zzzzbw.byrja.order.model.dto.OrderDto;
 
 /**
  * @author by zzzzbw

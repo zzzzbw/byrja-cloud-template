@@ -11,11 +11,17 @@
 
     <artifactId>byrja-user-service</artifactId>
     <dependencies>
+
+        <dependency>
+            <groupId>cn.zzzzbw</groupId>
+            <artifactId>byrja-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>cn.zzzzbw</groupId>
             <artifactId>byrja-order-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

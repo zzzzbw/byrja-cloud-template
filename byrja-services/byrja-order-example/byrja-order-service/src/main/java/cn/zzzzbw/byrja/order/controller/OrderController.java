@@ -1,7 +1,8 @@
 package cn.zzzzbw.byrja.order.controller;
 
+import cn.zzzzbw.byrja.order.api.OrderApi;
+import cn.zzzzbw.byrja.order.model.dto.OrderDto;
 import cn.zzzzbw.byrja.order.service.OrderService;
-import cn.zzzzbw.model.dto.OrderDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,13 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("order")
-public class OrderController {
+public class OrderController implements OrderApi {
 
     @Autowired
     private OrderService orderService;
 
-    @GetMapping("{orderId}")
-    public OrderDto get(@PathVariable String orderId) {
+    public OrderDto get(String orderId) {
         return orderService.getOrderDto(orderId);
     }
 }

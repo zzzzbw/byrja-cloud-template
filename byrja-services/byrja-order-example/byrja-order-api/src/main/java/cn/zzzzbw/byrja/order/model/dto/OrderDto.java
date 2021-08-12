@@ -1,4 +1,4 @@
-package cn.zzzzbw.model.dto;
+package cn.zzzzbw.byrja.order.model.dto;
 
 import lombok.Data;
 
