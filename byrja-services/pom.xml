@@ -15,9 +15,4 @@
         <module>byrja-order-example</module>
         <module>byrja-user-example</module>
     </modules>
-
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
 </project>
