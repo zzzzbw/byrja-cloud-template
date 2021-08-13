@@ -80,10 +80,10 @@
             <id>test</id>
             <properties>
                 <spring.active>test</spring.active>
-                <config.server-addr>172.26.85.32:8848</config.server-addr>
-                <config.namespace>568b8eaa-f25d-4f2a-8c87-83dcb4caa955</config.namespace>
+                <config.server-addr>127.0.0.1:8080</config.server-addr>
+                <config.namespace></config.namespace>
                 <config.group>DEFAULT_GROUP</config.group>
-                <discovery.server-addr>172.26.85.32:8848</discovery.server-addr>
+                <discovery.server-addr>127.0.0.1:8080</discovery.server-addr>
                 <sentinel.port>8719</sentinel.port>
                 <sentinel.dashboard>localhost:8080</sentinel.dashboard>
             </properties>
@@ -92,10 +92,10 @@
             <id>prod</id>
             <properties>
                 <spring.active>prod</spring.active>
-                <config.server-addr>172.26.85.32:8848</config.server-addr>
-                <config.namespace>568b8eaa-f25d-4f2a-8c87-83dcb4caa955</config.namespace>
+                <config.server-addr>127.0.0.1:8080</config.server-addr>
+                <config.namespace></config.namespace>
                 <config.group>DEFAULT_GROUP</config.group>
-                <discovery.server-addr>172.26.85.32:8848</discovery.server-addr>
+                <discovery.server-addr>127.0.0.1:8080</discovery.server-addr>
                 <sentinel.port>8719</sentinel.port>
                 <sentinel.dashboard>localhost:8080</sentinel.dashboard>
             </properties>
@@ -104,12 +104,12 @@
             <id>docker</id>
             <properties>
                 <spring.active>docker</spring.active>
-                <config.server-addr>172.30.0.48:8848</config.server-addr>
+                <config.server-addr>127.0.0.1:8080</config.server-addr>
                 <config.namespace></config.namespace>
                 <config.group>DEFAULT_GROUP</config.group>
-                <discovery.server-addr>172.30.0.48:8848</discovery.server-addr>
+                <discovery.server-addr>127.0.0.1:8080</discovery.server-addr>
                 <sentinel.port>8719</sentinel.port>
-                <sentinel.dashboard>172.30.0.80:8088</sentinel.dashboard>
+                <sentinel.dashboard>localhost:8080</sentinel.dashboard>
             </properties>
         </profile>
     </profiles>

@@ -4,7 +4,6 @@ import cn.zzzzbw.byrja.order.api.OrderApi;
 import cn.zzzzbw.byrja.order.model.dto.OrderDto;
 import cn.zzzzbw.byrja.user.config.UserConfig;
 import cn.zzzzbw.byrja.user.model.dto.UserDto;
-import cn.zzzzbw.byrja.user.model.dto.UserOrderDto;
 import cn.zzzzbw.byrja.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,24 +22,15 @@ public class UserServiceImpl implements UserService {
     private OrderApi orderApi;
 
     @Override
-    public UserOrderDto getUserOrderDto(String orderId) {
-
-        UserOrderDto userOrderDto = new UserOrderDto();
-        userOrderDto.setUsername(getUserConfig().getName());
-
-        OrderDto orderDto = orderApi.get(orderId);
-        if (null != orderDto) {
-            userOrderDto.setOrderId(orderDto.getOrderId());
-            userOrderDto.setTime(orderDto.getTime());
-        }
-
-        return userOrderDto;
+    public OrderDto getUserOrderDto(String orderId) {
+        return orderApi.get(orderId);
     }
 
     @Override
     public UserDto getUserConfig() {
         UserDto userDto = new UserDto();
         userDto.setName(userConfig.getName());
+        userDto.setAge(userConfig.getAge());
         return userDto;
     }
 }

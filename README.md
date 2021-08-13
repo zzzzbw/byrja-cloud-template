@@ -1,4 +1,4 @@
-# empezar-cloud-template
+# byrja-cloud-template
 
 ### 创建项目
 
@@ -31,6 +31,20 @@ spring-cloud相关组件的依赖
 
 业务代码模块，这里主要为演示作用
 
+需要打包的service要添加以下插件:
+
+```xml
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+```
+
 ### profile 设置
 
 pom文件要添加以下，否则spring配置文件无法以@xxx@读取到pom文件里的数据:
@@ -38,12 +52,12 @@ pom文件要添加以下，否则spring配置文件无法以@xxx@读取到pom文
 ```xml
 
 <build>
-    <resources>
-        <resource>
-            <directory>src/main/resources</directory>
-            <filtering>true</filtering>
-        </resource>
-    </resources>
+<resources>
+    <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+    </resource>
+</resources>
 </build>
 ```
 

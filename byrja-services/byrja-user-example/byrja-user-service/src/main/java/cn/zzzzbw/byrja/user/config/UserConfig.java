@@ -14,4 +14,6 @@ import org.springframework.context.annotation.Configuration;
 public class UserConfig {
 
     private String name;
+
+    private int age;
 }
