@@ -1,6 +1,2 @@
-spring:
-  application:
-    name: @artifactId@
-
 server:
   port: 8060
